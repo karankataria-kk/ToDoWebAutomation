@@ -1,5 +1,13 @@
 # Object file
 *.o
-
-# Ada Library Information
+*.class
+*.project
+*.classpath
+*.lst
+*.settings
+target/*
+*.png
+*.jpg
+*.jpeg
+Ada Library Information
 *.ali
