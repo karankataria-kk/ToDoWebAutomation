@@ -5,11 +5,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 import LogHandler.Log;
-
+/*
+ * This is a config file handler and contains all the functionality for
+ * creating and changing any key value pair in config.properties file...
+ */
 public class Config {
 	public static Properties prop;
 	private String configFilePath = "\\src\\main\\resources\\Configuarations\\config.properties";
-
 	public Config(){
 		try {
 			if(prop == null) {

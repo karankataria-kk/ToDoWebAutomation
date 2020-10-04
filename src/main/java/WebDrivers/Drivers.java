@@ -6,6 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import Configuration.Config;
 import LogHandler.Log;
 
+/*
+ * This file contains the Web Driver Intialization and contains reference to all the kind of
+ * web browser's drivers which are compatible with the framework.
+ */
 public class Drivers {
 	protected WebDriver driver;
 	protected String browser;

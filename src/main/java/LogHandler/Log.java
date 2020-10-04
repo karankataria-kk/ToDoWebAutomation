@@ -4,6 +4,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import org.apache.log4j.Logger;
+
+/*
+ * This is a log handler file which contains all the setup for creating and logging the logs in the 
+ * log file with all the functions i.e. -> Info, Warning, Debug, Fatal, Error. This logs the data in
+ * a format containing all the relevant information like time and the kind of log.
+ */
 public class Log {
 	final static Logger logger = Logger.getLogger(Log.class); 
 	public static String currentDateAndTime() {    
