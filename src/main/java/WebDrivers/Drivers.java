@@ -11,7 +11,7 @@ import LogHandler.Log;
  * web browser's drivers which are compatible with the framework.
  */
 public class Drivers {
-	protected WebDriver driver;
+	protected static WebDriver driver;
 	protected String browser;
 	protected String URL = Config.getProperty("URL");
 	public boolean launch() {
@@ -28,10 +28,10 @@ public class Drivers {
 		driver.get(URL);
 		return true;
 	}
-	public boolean initialiseWebDriver() {
+	public static boolean initialiseWebDriver() {
 		if(Config.getProperty("webdriver").equalsIgnoreCase("chrome")) {
 			try {	
-				System.setProperty("webdriver.chrome.driver", "\\src\\test\\resources\\Drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 				Log.info("Setting Chrome driver");
 			}catch (Exception unableToIntialise) {

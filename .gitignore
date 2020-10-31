@@ -12,3 +12,4 @@ target/*
 Ada Library Information
 *.ali
 *.log
+/bin/
