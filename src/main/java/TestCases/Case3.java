@@ -1,17 +1,16 @@
 package TestCases;
 
 import org.openqa.selenium.By;
-import org.testng.asserts.SoftAssert;
+import org.testng.Assert;
 
 import Locators.UILocators;
 import LogHandler.Log;
 import PageObject.PageObject;
 
-public class Case2 extends PageObject{
+public class Case3 extends PageObject{
 	/**
 	 * Test Case 2: Verify all input fields using Soft assertions.
 	 */
-	protected static SoftAssert softAssertion = new SoftAssert();
 	protected static boolean inputStatus = false;
 	protected static void inputFirstLastName(String fName, String lName){
 		try{
@@ -23,7 +22,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus,"Unable to enter the first and last name");
+		Assert.assertTrue(inputStatus,"Unable to enter the first and last name");
 	}
 	protected static void inputCurrentCompany(String currentCompanyName) {
 		try{
@@ -33,7 +32,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to enter current company details");
+		Assert.assertTrue(inputStatus, "Unable to enter current company details");
 	}
 	protected static void inputEmailId(String emailId) {
 		try{
@@ -43,7 +42,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to enter email id");
+		Assert.assertTrue(inputStatus, "Unable to enter email id");
 	}
 	protected static void mobileNumberInput(String mobileNumber) {
 		try{
@@ -53,7 +52,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus,"Unable to enter mobile number");
+		Assert.assertTrue(inputStatus,"Unable to enter mobile number");
 	}
 	protected static void dateOfBirthInput(String dob) {
 		try{
@@ -63,7 +62,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unabe to enter date of birth");
+		Assert.assertTrue(inputStatus, "Unabe to enter date of birth");
 	}
 	protected static void inputPosition(String position) {
 		try{
@@ -73,7 +72,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to enter position");
+		Assert.assertTrue(inputStatus, "Unable to enter position");
 	}
 	protected static void inputPortfolioWebsite(String portfolio) {
 		try{
@@ -85,7 +84,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to add portfolio website");
+		Assert.assertTrue(inputStatus, "Unable to add portfolio website");
 	}
 	protected static void inputSalaryRequirements(String salary) {
 		try{
@@ -95,7 +94,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to enter Salry requirements");
+		Assert.assertTrue(inputStatus, "Unable to enter Salry requirements");
 	}
 	protected static void inputStartDate(String startDate) {
 		try{
@@ -105,7 +104,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to input start date");
+		Assert.assertTrue(inputStatus, "Unable to input start date");
 	}
 	protected static void inputAddress(String address) {
 		try{
@@ -115,7 +114,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus);
+		Assert.assertTrue(inputStatus);
 	}
 	protected static void inputResumeFilePath(String filePath) {
 		try{
@@ -125,7 +124,7 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to add resume file");
+		Assert.assertTrue(inputStatus, "Unable to add resume file");
 	}
 	protected static void inputRelocateStatus(String relocteStatus) {
 		try{
@@ -140,6 +139,6 @@ public class Case2 extends PageObject{
 		}catch(Exception inputFieldsNotFound) {
 			inputStatus = false;
 		}
-		softAssertion.assertTrue(inputStatus, "Unable to add relocation status");
+		Assert.assertTrue(inputStatus, "Unable to add relocation status");
 	}
 }

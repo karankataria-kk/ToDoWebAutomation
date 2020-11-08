@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25018" started-at="2020-11-08T20:13:05 IST" finished-at="2020-11-08T20:13:30 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25018" started-at="2020-11-08T20:13:05 IST" finished-at="2020-11-08T20:13:30 IST">
+      <class name="TestSuite.NewTest">
+        <test-method status="PASS" signature="initialiseFrameworkSetup()[pri:0, instance:TestSuite.NewTest@cc285f4]" name="initialiseFrameworkSetup" is-config="true" duration-ms="18399" started-at="2020-11-08T20:13:05 IST" finished-at="2020-11-08T20:13:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseFrameworkSetup -->
+        <test-method status="PASS" signature="Test1()[pri:1, instance:TestSuite.NewTest@cc285f4]" name="Test1" duration-ms="453" started-at="2020-11-08T20:13:23 IST" finished-at="2020-11-08T20:13:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="Test2()[pri:2, instance:TestSuite.NewTest@cc285f4]" name="Test2" duration-ms="2685" started-at="2020-11-08T20:13:23 IST" finished-at="2020-11-08T20:13:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="PASS" signature="Test3()[pri:3, instance:TestSuite.NewTest@cc285f4]" name="Test3" duration-ms="1921" started-at="2020-11-08T20:13:26 IST" finished-at="2020-11-08T20:13:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method status="PASS" signature="Test4()[pri:4, instance:TestSuite.NewTest@cc285f4]" name="Test4" duration-ms="121" started-at="2020-11-08T20:13:28 IST" finished-at="2020-11-08T20:13:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:TestSuite.NewTest@cc285f4]" name="quit" is-config="true" duration-ms="1383" started-at="2020-11-08T20:13:28 IST" finished-at="2020-11-08T20:13:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- TestSuite.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

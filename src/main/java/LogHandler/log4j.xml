@@ -27,7 +27,7 @@
 
 
     <appender name="html" class="org.apache.log4j.FileAppender">
-        <param name="File" value="Reports//YeloAutomationHTMLReport.html" />
+        <param name="File" value="Reports//SourceFuseAutomationHTMLReport.html" />
         <param name="Append" value="false" />
         <layout class="org.apache.log4j.HTMLLayout" />
     </appender>

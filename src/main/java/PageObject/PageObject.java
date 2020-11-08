@@ -55,4 +55,7 @@ public class PageObject extends Drivers{
 		Config.setProperty("homepage.url", homePageURL);
 		return homePageURL;
 	}
+	public static void closeBrowser() {
+		driver.quit();
+	}
 }

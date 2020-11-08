@@ -4,11 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
-import Configuration.Config;
 import Locators.UILocators;
 import LogHandler.Log;
 import PageObject.PageObject;
-import Synchronisation.Synchronise;
 
 public class Case1 extends PageObject{
 	/*Case - 1
