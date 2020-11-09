@@ -12,4 +12,5 @@ target/*
 Ada Library Information
 *.ali
 *.log
+/test-output
 /bin/
