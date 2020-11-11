@@ -1,9 +1,7 @@
 package LogHandler;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 
 /*
  * This is a log handler file which contains all the setup for creating and logging the logs in the 
@@ -11,25 +9,35 @@ import org.apache.log4j.Logger;
  * a format containing all the relevant information like time and the kind of log.
  */
 public class Log {
-	final static Logger logger = Logger.getLogger(Log.class); 
-	public static String currentDateAndTime() {    
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");  
-		LocalDateTime now = LocalDateTime.now();  
-		return dtf.format(now);  
+	static Logger logger =  null;
+	static String logFilePath = "src\\main\\java\\LogHandler\\log4j.xml";
+	public static Logger getLogger() {
+		if (logger==null)
+			initializeLog(Log.class , logFilePath);
+		return logger;
+	}
+	public static void initializeLog(Class<Log> logClass, String logFilePath) {
+		logger = Logger.getLogger(logClass);
+		DOMConfigurator.configure(logFilePath);
 	}    
 	public static void info(String message){
-		logger.info(currentDateAndTime() + " - INFO - " + message);			
+		getLogger();
+		logger.info(message);			
 	}
 	public static void warn(String message) {
-		logger.warn(currentDateAndTime() + " - WARNING - " + message);
+		getLogger();
+		logger.warn(message);
 	}
 	public static void error(String message) {
-		logger.error(currentDateAndTime() + " - ERROR - " + message);
+		getLogger();
+		logger.error(message);
 	}
 	public static void fatal(String message) {
-		logger.fatal(currentDateAndTime() + " - FATAL - " + message);
+		getLogger();
+		logger.fatal(message);
 	}
 	public void debug(String message) {
-		logger.debug(currentDateAndTime() + " - DEBUG - " + message);
+		getLogger();
+		logger.debug(message);
 	}
 }

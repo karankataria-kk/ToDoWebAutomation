@@ -10,9 +10,9 @@ import LogHandler.Log;
  * creating and changing any key value pair in config.properties file...
  */
 public class Config {
-	public static Properties prop;
-	private String configFilePath = "\\src\\main\\resources\\Configuarations\\config.properties";
-	public Config(){
+	public static Properties prop = null;
+	private static String configFilePath = "src\\main\\resources\\Configuarations\\config.properties";
+	public static void initialiseConfig(){
 		try {
 			if(prop == null) {
 				prop = new Properties();
@@ -26,9 +26,15 @@ public class Config {
 		}
 	}
 	public static String getProperty(String key) {
-		return prop.getProperty(key);
+		initialiseConfig();
+		if(prop.getProperty(key) != null)
+			return prop.getProperty(key);
+		else
+			Log.error("NULL value found for key " + key);
+		return null;
 	}
 	public static void setProperty(String key, String value) {
+		initialiseConfig();
 		prop.setProperty(key, value);
 		Log.info("Setting property key and value -> " + key + " - " + value);
 	}
