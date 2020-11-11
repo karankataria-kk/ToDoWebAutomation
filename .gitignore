@@ -9,6 +9,6 @@ target/*
 *.png
 *.jpg
 *.jpeg
-Ada Library Information
+# Ada Library Information
 *.ali
 *.log
